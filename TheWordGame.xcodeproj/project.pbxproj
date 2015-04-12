@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		187E00D81ADB24AB00D673C4 /* LSSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E00D71ADB24AB00D673C4 /* LSSMainViewController.swift */; };
+		187E00DA1ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E00D91ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift */; };
 		BAF13B821AD98FC2007EEB0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF13B791AD98FC2007EEB0D /* AppDelegate.swift */; };
 		BAF13B831AD98FC2007EEB0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B7A1AD98FC2007EEB0D /* LaunchScreen.xib */; };
 		BAF13B841AD98FC3007EEB0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B7C1AD98FC2007EEB0D /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		187E00D71ADB24AB00D673C4 /* LSSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSSMainViewController.swift; sourceTree = "<group>"; };
+		187E00D91ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerFreePlayViewController.swift; sourceTree = "<group>"; };
 		78E75F3C1AC5FC48001A93F1 /* TheWordGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWordGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E75F511AC5FC48001A93F1 /* TheWordGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheWordGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF13B791AD98FC2007EEB0D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		187E00D41ADB243A00D673C4 /* Single Player */ = {
 			isa = PBXGroup;
 			children = (
+				187E00D91ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift */,
 			);
 			name = "Single Player";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				187E00D81ADB24AB00D673C4 /* LSSMainViewController.swift in Sources */,
 				BAF13B881AD98FC3007EEB0D /* ViewController.swift in Sources */,
+				187E00DA1ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift in Sources */,
 				BAF13B851AD98FC3007EEB0D /* ContentViewController.swift in Sources */,
 				BAF13B821AD98FC2007EEB0D /* AppDelegate.swift in Sources */,
 			);

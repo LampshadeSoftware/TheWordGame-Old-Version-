@@ -29,3 +29,23 @@ class LSSMainViewController: UIViewController {
 
 
 }
+
+func isValidPlay(newWord: NSString, currentWord: NSString) -> Bool {
+    
+    return false
+}
+
+func isValidAdd(newWord: NSString, currentWord: NSString) -> Bool {
+    
+    return false
+}
+
+func isValidSub(newWord: NSString, currentWord: NSString) -> Bool {
+    
+    return false
+}
+
+func isValidExc(newWord: NSString, currentWord: NSString) -> Bool {
+    
+    return false
+}
