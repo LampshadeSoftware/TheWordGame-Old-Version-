@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAF13B821AD98FC2007EEB0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF13B791AD98FC2007EEB0D /* AppDelegate.swift */; };
+		BAF13B831AD98FC2007EEB0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B7A1AD98FC2007EEB0D /* LaunchScreen.xib */; };
+		BAF13B841AD98FC3007EEB0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B7C1AD98FC2007EEB0D /* Main.storyboard */; };
+		BAF13B851AD98FC3007EEB0D /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF13B7E1AD98FC2007EEB0D /* ContentViewController.swift */; };
+		BAF13B861AD98FC3007EEB0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B7F1AD98FC2007EEB0D /* Images.xcassets */; };
+		BAF13B871AD98FC3007EEB0D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B801AD98FC2007EEB0D /* Info.plist */; };
+		BAF13B881AD98FC3007EEB0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF13B811AD98FC2007EEB0D /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78E75F521AC5FC48001A93F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78E75F341AC5FC48001A93F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78E75F3B1AC5FC48001A93F1;
+			remoteInfo = UIPageViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78E75F3C1AC5FC48001A93F1 /* TheWordGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWordGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E75F511AC5FC48001A93F1 /* TheWordGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheWordGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF13B791AD98FC2007EEB0D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAF13B7B1AD98FC2007EEB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BAF13B7D1AD98FC2007EEB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAF13B7E1AD98FC2007EEB0D /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		BAF13B7F1AD98FC2007EEB0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BAF13B801AD98FC2007EEB0D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF13B811AD98FC2007EEB0D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78E75F391AC5FC48001A93F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E75F4E1AC5FC48001A93F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78E75F331AC5FC48001A93F1 = {
+			isa = PBXGroup;
+			children = (
+				BAF13B781AD98FC2007EEB0D /* TheWordGame */,
+				78E75F3D1AC5FC48001A93F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78E75F3D1AC5FC48001A93F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78E75F3C1AC5FC48001A93F1 /* TheWordGame.app */,
+				78E75F511AC5FC48001A93F1 /* TheWordGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAF13B781AD98FC2007EEB0D /* TheWordGame */ = {
+			isa = PBXGroup;
+			children = (
+				BAF13B7A1AD98FC2007EEB0D /* LaunchScreen.xib */,
+				BAF13B7C1AD98FC2007EEB0D /* Main.storyboard */,
+				BAF13B791AD98FC2007EEB0D /* AppDelegate.swift */,
+				BAF13B811AD98FC2007EEB0D /* ViewController.swift */,
+				BAF13B7E1AD98FC2007EEB0D /* ContentViewController.swift */,
+				BAF13B7F1AD98FC2007EEB0D /* Images.xcassets */,
+				BAF13B801AD98FC2007EEB0D /* Info.plist */,
+			);
+			path = TheWordGame;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78E75F3B1AC5FC48001A93F1 /* TheWordGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E75F5B1AC5FC48001A93F1 /* Build configuration list for PBXNativeTarget "TheWordGame" */;
+			buildPhases = (
+				78E75F381AC5FC48001A93F1 /* Sources */,
+				78E75F391AC5FC48001A93F1 /* Frameworks */,
+				78E75F3A1AC5FC48001A93F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheWordGame;
+			productName = UIPageViewController;
+			productReference = 78E75F3C1AC5FC48001A93F1 /* TheWordGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78E75F501AC5FC48001A93F1 /* TheWordGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E75F5E1AC5FC48001A93F1 /* Build configuration list for PBXNativeTarget "TheWordGameTests" */;
+			buildPhases = (
+				78E75F4D1AC5FC48001A93F1 /* Sources */,
+				78E75F4E1AC5FC48001A93F1 /* Frameworks */,
+				78E75F4F1AC5FC48001A93F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78E75F531AC5FC48001A93F1 /* PBXTargetDependency */,
+			);
+			name = TheWordGameTests;
+			productName = UIPageViewControllerTests;
+			productReference = 78E75F511AC5FC48001A93F1 /* TheWordGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78E75F341AC5FC48001A93F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Vea Software";
+				TargetAttributes = {
+					78E75F3B1AC5FC48001A93F1 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					78E75F501AC5FC48001A93F1 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 78E75F3B1AC5FC48001A93F1;
+					};
+				};
+			};
+			buildConfigurationList = 78E75F371AC5FC48001A93F1 /* Build configuration list for PBXProject "TheWordGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78E75F331AC5FC48001A93F1;
+			productRefGroup = 78E75F3D1AC5FC48001A93F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78E75F3B1AC5FC48001A93F1 /* TheWordGame */,
+				78E75F501AC5FC48001A93F1 /* TheWordGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78E75F3A1AC5FC48001A93F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF13B831AD98FC2007EEB0D /* LaunchScreen.xib in Resources */,
+				BAF13B841AD98FC3007EEB0D /* Main.storyboard in Resources */,
+				BAF13B861AD98FC3007EEB0D /* Images.xcassets in Resources */,
+				BAF13B871AD98FC3007EEB0D /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E75F4F1AC5FC48001A93F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78E75F381AC5FC48001A93F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF13B881AD98FC3007EEB0D /* ViewController.swift in Sources */,
+				BAF13B851AD98FC3007EEB0D /* ContentViewController.swift in Sources */,
+				BAF13B821AD98FC2007EEB0D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E75F4D1AC5FC48001A93F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78E75F531AC5FC48001A93F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78E75F3B1AC5FC48001A93F1 /* TheWordGame */;
+			targetProxy = 78E75F521AC5FC48001A93F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAF13B7A1AD98FC2007EEB0D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF13B7B1AD98FC2007EEB0D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		BAF13B7C1AD98FC2007EEB0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF13B7D1AD98FC2007EEB0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78E75F591AC5FC48001A93F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78E75F5A1AC5FC48001A93F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78E75F5C1AC5FC48001A93F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/TheWordGame/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		78E75F5D1AC5FC48001A93F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/TheWordGame/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		78E75F5F1AC5FC48001A93F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UIPageViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIPageViewController.app/UIPageViewController";
+			};
+			name = Debug;
+		};
+		78E75F601AC5FC48001A93F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UIPageViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIPageViewController.app/UIPageViewController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78E75F371AC5FC48001A93F1 /* Build configuration list for PBXProject "TheWordGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E75F591AC5FC48001A93F1 /* Debug */,
+				78E75F5A1AC5FC48001A93F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E75F5B1AC5FC48001A93F1 /* Build configuration list for PBXNativeTarget "TheWordGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E75F5C1AC5FC48001A93F1 /* Debug */,
+				78E75F5D1AC5FC48001A93F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E75F5E1AC5FC48001A93F1 /* Build configuration list for PBXNativeTarget "TheWordGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E75F5F1AC5FC48001A93F1 /* Debug */,
+				78E75F601AC5FC48001A93F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78E75F341AC5FC48001A93F1 /* Project object */;
+}
