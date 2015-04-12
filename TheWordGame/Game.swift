@@ -10,5 +10,8 @@ import Foundation
 
 class Game {
     var currentWord: String!
+    var wordCount: Int!
     var usedWords = [String]()
+    var logMessage: String!
+    
 }

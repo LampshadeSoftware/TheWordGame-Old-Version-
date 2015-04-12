@@ -18,20 +18,9 @@
 		CCC4F5721ADB30AE0094BA72 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC4F5711ADB30AE0094BA72 /* Game.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		78E75F521AC5FC48001A93F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78E75F341AC5FC48001A93F1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78E75F3B1AC5FC48001A93F1;
-			remoteInfo = UIPageViewController;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		187E00D91ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerFreePlayViewController.swift; sourceTree = "<group>"; };
 		78E75F3C1AC5FC48001A93F1 /* TheWordGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWordGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		78E75F511AC5FC48001A93F1 /* TheWordGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheWordGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF13B791AD98FC2007EEB0D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAF13B7B1AD98FC2007EEB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BAF13B7D1AD98FC2007EEB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,13 +33,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		78E75F391AC5FC48001A93F1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78E75F4E1AC5FC48001A93F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				78E75F3C1AC5FC48001A93F1 /* TheWordGame.app */,
-				78E75F511AC5FC48001A93F1 /* TheWordGameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,24 +118,6 @@
 			productReference = 78E75F3C1AC5FC48001A93F1 /* TheWordGame.app */;
 			productType = "com.apple.product-type.application";
 		};
-		78E75F501AC5FC48001A93F1 /* TheWordGameTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 78E75F5E1AC5FC48001A93F1 /* Build configuration list for PBXNativeTarget "TheWordGameTests" */;
-			buildPhases = (
-				78E75F4D1AC5FC48001A93F1 /* Sources */,
-				78E75F4E1AC5FC48001A93F1 /* Frameworks */,
-				78E75F4F1AC5FC48001A93F1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				78E75F531AC5FC48001A93F1 /* PBXTargetDependency */,
-			);
-			name = TheWordGameTests;
-			productName = UIPageViewControllerTests;
-			productReference = 78E75F511AC5FC48001A93F1 /* TheWordGameTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,10 +129,6 @@
 				TargetAttributes = {
 					78E75F3B1AC5FC48001A93F1 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					78E75F501AC5FC48001A93F1 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 78E75F3B1AC5FC48001A93F1;
 					};
 				};
 			};
@@ -187,7 +146,6 @@
 			projectRoot = "";
 			targets = (
 				78E75F3B1AC5FC48001A93F1 /* TheWordGame */,
-				78E75F501AC5FC48001A93F1 /* TheWordGameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,13 +159,6 @@
 				BAF13B841AD98FC3007EEB0D /* Main.storyboard in Resources */,
 				BAF13B861AD98FC3007EEB0D /* Images.xcassets in Resources */,
 				BAF13B871AD98FC3007EEB0D /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78E75F4F1AC5FC48001A93F1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,22 +177,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78E75F4D1AC5FC48001A93F1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		78E75F531AC5FC48001A93F1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 78E75F3B1AC5FC48001A93F1 /* TheWordGame */;
-			targetProxy = 78E75F521AC5FC48001A93F1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BAF13B7A1AD98FC2007EEB0D /* LaunchScreen.xib */ = {
@@ -337,6 +273,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -362,40 +299,6 @@
 			};
 			name = Release;
 		};
-		78E75F5F1AC5FC48001A93F1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = UIPageViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIPageViewController.app/UIPageViewController";
-			};
-			name = Debug;
-		};
-		78E75F601AC5FC48001A93F1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = UIPageViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIPageViewController.app/UIPageViewController";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -413,15 +316,6 @@
 			buildConfigurations = (
 				78E75F5C1AC5FC48001A93F1 /* Debug */,
 				78E75F5D1AC5FC48001A93F1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		78E75F5E1AC5FC48001A93F1 /* Build configuration list for PBXNativeTarget "TheWordGameTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				78E75F5F1AC5FC48001A93F1 /* Debug */,
-				78E75F601AC5FC48001A93F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
