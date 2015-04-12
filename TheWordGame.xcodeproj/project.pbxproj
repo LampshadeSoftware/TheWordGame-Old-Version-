@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187E00D81ADB24AB00D673C4 /* LSSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E00D71ADB24AB00D673C4 /* LSSMainViewController.swift */; };
 		BAF13B821AD98FC2007EEB0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF13B791AD98FC2007EEB0D /* AppDelegate.swift */; };
 		BAF13B831AD98FC2007EEB0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B7A1AD98FC2007EEB0D /* LaunchScreen.xib */; };
 		BAF13B841AD98FC3007EEB0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B7C1AD98FC2007EEB0D /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187E00D71ADB24AB00D673C4 /* LSSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSSMainViewController.swift; sourceTree = "<group>"; };
 		78E75F3C1AC5FC48001A93F1 /* TheWordGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWordGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E75F511AC5FC48001A93F1 /* TheWordGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheWordGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF13B791AD98FC2007EEB0D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		187E00D41ADB243A00D673C4 /* Single Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Single Player";
+			sourceTree = "<group>";
+		};
+		187E00D51ADB245F00D673C4 /* Multiplayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Multiplayer;
+			sourceTree = "<group>";
+		};
+		187E00D61ADB248000D673C4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				187E00D71ADB24AB00D673C4 /* LSSMainViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		78E75F331AC5FC48001A93F1 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +107,9 @@
 				BAF13B7E1AD98FC2007EEB0D /* ContentViewController.swift */,
 				BAF13B7F1AD98FC2007EEB0D /* Images.xcassets */,
 				BAF13B801AD98FC2007EEB0D /* Info.plist */,
+				187E00D61ADB248000D673C4 /* Main */,
+				187E00D41ADB243A00D673C4 /* Single Player */,
+				187E00D51ADB245F00D673C4 /* Multiplayer */,
 			);
 			path = TheWordGame;
 			sourceTree = "<group>";
@@ -188,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187E00D81ADB24AB00D673C4 /* LSSMainViewController.swift in Sources */,
 				BAF13B881AD98FC3007EEB0D /* ViewController.swift in Sources */,
 				BAF13B851AD98FC3007EEB0D /* ContentViewController.swift in Sources */,
 				BAF13B821AD98FC2007EEB0D /* AppDelegate.swift in Sources */,
