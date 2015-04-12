@@ -246,7 +246,7 @@
         <!--Freeplay-->
         <scene sceneID="uz3-oL-yEg">
             <objects>
-                <viewController title="Freeplay" id="zhu-Bd-sDr" sceneMemberID="viewController">
+                <viewController title="Freeplay" id="zhu-Bd-sDr" customClass="SinglePlayerFreePlayViewController" customModule="TheWordGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3qO-0y-NEN"/>
                         <viewControllerLayoutGuide type="bottom" id="pvm-2k-bJ9"/>

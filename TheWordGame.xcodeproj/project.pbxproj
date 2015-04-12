@@ -162,7 +162,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
-				ORGANIZATIONNAME = "Vea Software";
+				ORGANIZATIONNAME = "Lampshade Software";
 				TargetAttributes = {
 					78E75F3B1AC5FC48001A93F1 = {
 						CreatedOnToolsVersion = 6.2;
