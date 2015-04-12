@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fS3-CX-oI0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fS3-CX-oI0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Game-->
@@ -50,7 +50,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.33890800991713749" green="0.36864399959595084" blue="0.41603535353535348" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.51552641179386827" green="0.51694420665463714" blue="0.5668996710526315" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJv-Yb-VGB" userLabel="TopBar">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
@@ -61,12 +61,12 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LVa-oN-thS" userLabel="Blue Line">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LVa-oN-thS" userLabel="Orange Line">
                                         <rect key="frame" x="0.0" y="58" width="320" height="2"/>
-                                        <color key="backgroundColor" red="0.36670148201502284" green="0.89793711911264373" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.70245195630000001" blue="0.52299768790000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.218630667" green="0.2415600728" blue="0.3017676768" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43457585430000001" green="0.44224713459999998" blue="0.49727746210000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr4-ef-Tth" userLabel="Instructions">
                                 <rect key="frame" x="32" y="257" width="60" height="60"/>
@@ -164,9 +164,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gt9-96-Q1Y">
-                                <rect key="frame" x="0.0" y="188" width="320" height="292"/>
-                            </scrollView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpb-fH-KOE" userLabel="TopBar">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                 <subviews>
@@ -193,7 +190,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.218630667" green="0.2415600728" blue="0.3017676768" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43457585430000001" green="0.44224713459999998" blue="0.49727746210000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8n-Xn-OxY" userLabel="Instructions">
                                 <rect key="frame" x="130" y="80" width="60" height="60"/>
@@ -234,8 +231,16 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKG-0Q-sWv">
+                                <rect key="frame" x="0.0" y="180" width="320" height="297"/>
+                                <color key="backgroundColor" red="0.43457585430000001" green="0.44224713459999998" blue="0.49727746210000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBa-EG-5DT" userLabel="Orange Line">
+                                <rect key="frame" x="0.0" y="180" width="320" height="2"/>
+                                <color key="backgroundColor" red="1" green="0.70245195630000001" blue="0.52299768790000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.43457585430000001" green="0.44224713459999998" blue="0.49727746210000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.51552641180000003" green="0.51694420669999996" blue="0.56689967109999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
@@ -633,7 +638,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.218630667" green="0.2415600728" blue="0.3017676768" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.43457585430000001" green="0.44224713459999998" blue="0.49727746210000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8n-Jf-Lcm" userLabel="Instructions">
                                 <rect key="frame" x="176" y="80" width="60" height="60"/>
@@ -661,11 +666,16 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s8P-J1-thk">
-                                <rect key="frame" x="0.0" y="318" width="320" height="292"/>
-                            </scrollView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yi1-zr-uTh">
+                                <rect key="frame" x="0.0" y="183" width="320" height="297"/>
+                                <color key="backgroundColor" red="0.43457585430000001" green="0.44224713459999998" blue="0.49727746210000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Poe-iA-Plq" userLabel="Orange Line">
+                                <rect key="frame" x="0.0" y="180" width="320" height="2"/>
+                                <color key="backgroundColor" red="1" green="0.70245195630000001" blue="0.52299768790000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.43457585430000001" green="0.44224713459999998" blue="0.49727746210000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.51552641180000003" green="0.51694420669999996" blue="0.56689967109999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
@@ -833,7 +843,7 @@
         <image name="time" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="HMe-V6-lrs"/>
         <segue reference="iAr-3B-iTa"/>
-        <segue reference="YDE-IR-8RH"/>
     </inferredMetricsTieBreakers>
 </document>
