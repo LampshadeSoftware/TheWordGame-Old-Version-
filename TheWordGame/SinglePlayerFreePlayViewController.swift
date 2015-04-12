@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SinglePlayerFreePlayViewController: LSSMainViewController {
+class SinglePlayerFreePlayViewController: UIViewController {
     
     //declares labels that show the words
     @IBOutlet weak var wordInput: UITextField!
@@ -20,9 +20,7 @@ class SinglePlayerFreePlayViewController: LSSMainViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //sets up labels for beginning of game
-        currentWord.text = "word"; lastWord1.text = ""; lastWord2.text = ""; lastWord3.text = ""
+
         
     }
 
@@ -35,8 +33,8 @@ class SinglePlayerFreePlayViewController: LSSMainViewController {
     
     @IBAction func submitButton(sender: AnyObject) {
         
-        //moves words down the chain of labels
-        currentWord.text = wordInput.text; lastWord1.text = currentWord.text; lastWord2.text = lastWord1.text; lastWord3.text = lastWord2.text
+        
+        
         
         
         
