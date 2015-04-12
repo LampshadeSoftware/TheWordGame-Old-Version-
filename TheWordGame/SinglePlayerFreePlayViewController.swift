@@ -9,6 +9,14 @@
 import UIKit
 
 class SinglePlayerFreePlayViewController: UIViewController {
+    
+    //declares labels that show the words
+    @IBOutlet weak var wordInput: UITextField!
+    @IBOutlet weak var currentWord: UILabel!
+    @IBOutlet weak var lastWord1: UILabel!
+    @IBOutlet weak var lastWord2: UILabel!
+    @IBOutlet weak var lastWord3: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +29,16 @@ class SinglePlayerFreePlayViewController: UIViewController {
        
     }
     
-
+    
+    
+    @IBAction func submitButton(sender: AnyObject) {
+        
+        
+        
+        
+        
+        
+    }
+    
 
 }
