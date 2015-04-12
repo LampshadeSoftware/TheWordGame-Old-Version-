@@ -11,4 +11,28 @@ import Foundation
 class Game {
     var currentWord: String!
     var usedWords = [String]()
+
+
+    func isValidPlay(newWord: String, currentWord: String) -> Bool {
+        
+        return false
+    }
+    
+    func isValidAdd(newWord: String, currentWord: String) -> Bool {
+        
+        return false
+    }
+    
+    func isValidSub(newWord: String, currentWord: String) -> Bool {
+        
+        return false
+    }
+    
+    func isValidExc(newWord: String, currentWord: String) -> Bool {
+        
+        return false
+    }
+
+
+
 }
