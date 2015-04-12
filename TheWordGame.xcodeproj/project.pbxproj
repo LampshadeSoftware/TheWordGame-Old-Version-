@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		187E00D81ADB24AB00D673C4 /* LSSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E00D71ADB24AB00D673C4 /* LSSMainViewController.swift */; };
 		187E00DA1ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E00D91ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift */; };
 		BAF13B821AD98FC2007EEB0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF13B791AD98FC2007EEB0D /* AppDelegate.swift */; };
 		BAF13B831AD98FC2007EEB0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B7A1AD98FC2007EEB0D /* LaunchScreen.xib */; };
@@ -30,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		187E00D71ADB24AB00D673C4 /* LSSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSSMainViewController.swift; sourceTree = "<group>"; };
 		187E00D91ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerFreePlayViewController.swift; sourceTree = "<group>"; };
 		78E75F3C1AC5FC48001A93F1 /* TheWordGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWordGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E75F511AC5FC48001A93F1 /* TheWordGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheWordGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				CCC4F5711ADB30AE0094BA72 /* Game.swift */,
-				187E00D71ADB24AB00D673C4 /* LSSMainViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -221,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187E00D81ADB24AB00D673C4 /* LSSMainViewController.swift in Sources */,
 				CCC4F5721ADB30AE0094BA72 /* Game.swift in Sources */,
 				BAF13B881AD98FC3007EEB0D /* ViewController.swift in Sources */,
 				187E00DA1ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift in Sources */,

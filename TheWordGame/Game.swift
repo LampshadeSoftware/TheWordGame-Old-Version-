@@ -10,5 +10,5 @@ import Foundation
 
 class Game {
     var currentWord: String!
-    var usedWords: String = ()!
+    var usedWords = [String]()
 }
