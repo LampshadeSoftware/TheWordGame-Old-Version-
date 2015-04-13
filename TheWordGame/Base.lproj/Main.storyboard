@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="shU-zO-H2c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0ux-Ou-mcL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpb-fH-KOE" userLabel="TopBar">
@@ -333,7 +335,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bPx-RF-hg0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Ps-41-V6B">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gZV-uk-pUz" userLabel="TopBar">
@@ -415,7 +417,7 @@
                         <viewControllerLayoutGuide type="bottom" id="grt-XO-hAQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Uin-3U-b3J">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ldW-Tb-58G" userLabel="GameModes">
@@ -539,7 +541,6 @@
         <!--Game-->
         <scene sceneID="Y5u-oV-Q1M">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="74t-7E-C7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Game" id="93j-i6-rWc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zjn-kA-Ujt"/>
@@ -549,7 +550,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Word Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6x7-Ka-RA3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="The Word Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6x7-Ka-RA3">
                                 <rect key="frame" x="213" y="7" width="173" height="47"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -558,11 +559,11 @@
                                     <rect key="frame" x="113" y="6" width="174" height="48"/>
                                 </variation>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ND4-qG-K69" userLabel="GameModes">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ND4-qG-K69" userLabel="GameModes">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="220"/>
                                 <color key="backgroundColor" red="0.51552641180000003" green="0.51694420669999996" blue="0.56689967109999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8dk-9o-ocF" userLabel="Orange Line">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dk-9o-ocF" userLabel="Orange Line">
                                 <rect key="frame" x="0.0" y="58" width="600" height="2"/>
                                 <color key="backgroundColor" red="1" green="0.70245195630000001" blue="0.52299768790000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -576,7 +577,7 @@
                                     <rect key="frame" x="0.0" y="220" width="420" height="2"/>
                                 </variation>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MULTI-PLAYER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTn-j2-dPh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="MULTI-PLAYER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTn-j2-dPh">
                                 <rect key="frame" x="314" y="168" width="107" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -585,7 +586,7 @@
                                     <rect key="frame" x="214" y="167" width="108" height="22"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SINGLEPLAYER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJg-6f-T0E">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SINGLEPLAYER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJg-6f-T0E">
                                 <rect key="frame" x="179" y="168" width="107" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="11"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -594,7 +595,7 @@
                                     <rect key="frame" x="79" y="167" width="108" height="22"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WY-Aa-N8u" userLabel="Single Player">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WY-Aa-N8u" userLabel="Single Player">
                                 <rect key="frame" x="195" y="90" width="75" height="75"/>
                                 <state key="normal" image="sp">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -606,7 +607,7 @@
                                     <segue destination="MyA-E0-HRC" kind="presentation" id="dRU-fR-nv3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgj-IS-nBD" userLabel="Multi-player">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgj-IS-nBD" userLabel="Multi-player">
                                 <rect key="frame" x="330" y="90" width="75" height="75"/>
                                 <state key="normal" image="mp">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -618,7 +619,7 @@
                                     <segue destination="Jn6-SL-Sbx" kind="presentation" id="iu1-Fj-knw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClE-PK-NNc" userLabel="Settings">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClE-PK-NNc" userLabel="Settings">
                                 <rect key="frame" x="171" y="257" width="60" height="60"/>
                                 <color key="tintColor" red="0.95326173780000001" green="1" blue="0.99516090499999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="settings">
@@ -632,7 +633,7 @@
                                     <color key="titleColor" red="0.13053033759999999" green="0.3017676768" blue="0.17897951140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aND-6g-PyS" userLabel="Instructions">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aND-6g-PyS" userLabel="Instructions">
                                 <rect key="frame" x="367" y="257" width="60" height="60"/>
                                 <color key="tintColor" red="0.95326173780000001" green="1" blue="0.99516090499999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="instructions">
@@ -642,25 +643,25 @@
                                     <segue destination="vXZ-lx-hvc" kind="presentation" id="ahh-p1-EET"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SETTINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJr-Gd-CcH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SETTINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJr-Gd-CcH">
                                 <rect key="frame" x="160" y="319" width="83" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ACHIEVEMENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTU-mC-rJA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ACHIEVEMENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTU-mC-rJA">
                                 <rect key="frame" x="258" y="319" width="83" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INSTRUCTIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFG-s6-fyX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="INSTRUCTIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFG-s6-fyX">
                                 <rect key="frame" x="356" y="319" width="83" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-6z-ex4" userLabel="Stats">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-6z-ex4" userLabel="Stats">
                                 <rect key="frame" x="218" y="370" width="60" height="60"/>
                                 <color key="tintColor" red="0.95326173780000001" green="1" blue="0.99516090499999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="stats">
@@ -670,13 +671,13 @@
                                     <segue destination="eTf-rO-evW" kind="presentation" id="tsP-Sw-3Iq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STATS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jD5-f7-BCG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="STATS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jD5-f7-BCG">
                                 <rect key="frame" x="207" y="432" width="83" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWg-gd-Lqg" userLabel="Rate">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWg-gd-Lqg" userLabel="Rate">
                                 <rect key="frame" x="320" y="370" width="60" height="60"/>
                                 <color key="tintColor" red="0.95326173780000001" green="1" blue="0.99516090499999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="heart">
@@ -686,7 +687,7 @@
                                     <segue destination="nLy-ZS-bHM" kind="presentation" id="ORm-Ph-wLS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RATE &amp; REVIEW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41U-2N-7Um">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="RATE &amp; REVIEW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41U-2N-7Um">
                                 <rect key="frame" x="308" y="432" width="83" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -798,6 +799,12 @@
                                 <exclude reference="R0t-qs-XBL"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="1Tn-UH-DaZ"/>
+                                <exclude reference="Gys-Li-ono"/>
+                                <exclude reference="L9J-m5-vX6"/>
+                                <exclude reference="Pz6-YH-ztL"/>
+                                <exclude reference="ZY6-gi-SA3"/>
+                                <exclude reference="b88-ci-cZf"/>
                                 <exclude reference="4ta-So-wh7"/>
                                 <exclude reference="5Ox-Nu-0BA"/>
                                 <exclude reference="8pl-vl-tJ0"/>
@@ -811,27 +818,22 @@
                                 <exclude reference="gkT-Vg-RJb"/>
                                 <exclude reference="qp0-y4-8j6"/>
                                 <exclude reference="y3i-uF-K6f"/>
-                                <exclude reference="ln5-t9-wfO"/>
-                                <exclude reference="q1k-tC-be7"/>
-                                <exclude reference="t04-3z-WRf"/>
                                 <exclude reference="lVA-p4-a1I"/>
                                 <exclude reference="1TV-q4-OiM"/>
                                 <exclude reference="D19-Uv-RLf"/>
                                 <exclude reference="FUa-74-lQX"/>
-                                <exclude reference="1Tn-UH-DaZ"/>
-                                <exclude reference="Gys-Li-ono"/>
-                                <exclude reference="L9J-m5-vX6"/>
-                                <exclude reference="Pz6-YH-ztL"/>
-                                <exclude reference="ZY6-gi-SA3"/>
-                                <exclude reference="b88-ci-cZf"/>
                                 <exclude reference="niQ-Vn-9Bv"/>
                                 <exclude reference="vXd-eE-Cg2"/>
+                                <exclude reference="ln5-t9-wfO"/>
+                                <exclude reference="q1k-tC-be7"/>
+                                <exclude reference="t04-3z-WRf"/>
                                 <exclude reference="TxU-Hd-zrb"/>
                                 <exclude reference="ZRN-F0-rUN"/>
                                 <exclude reference="lPE-fR-bCz"/>
                                 <exclude reference="8gn-Fm-Kyo"/>
                                 <exclude reference="C9R-YZ-mSJ"/>
                                 <exclude reference="kOP-OC-hTj"/>
+                                <exclude reference="8Bo-wa-1VK"/>
                                 <exclude reference="2cg-u7-LoY"/>
                                 <exclude reference="E4e-RA-kRw"/>
                                 <exclude reference="N3B-Je-yqg"/>
@@ -839,7 +841,6 @@
                                 <exclude reference="ibv-yX-hja"/>
                                 <exclude reference="x0u-Jb-oxB"/>
                                 <exclude reference="yJm-v6-7hh"/>
-                                <exclude reference="8Bo-wa-1VK"/>
                                 <exclude reference="0Wh-LR-moW"/>
                                 <exclude reference="P1a-DN-BZY"/>
                                 <exclude reference="WPf-UP-YX8"/>
@@ -850,6 +851,8 @@
                                 <exclude reference="tQ7-W4-fne"/>
                                 <exclude reference="uRs-qd-BGM"/>
                                 <exclude reference="y9Y-dk-Slm"/>
+                                <exclude reference="rAc-S4-6fi"/>
+                                <exclude reference="rPk-9K-kfy"/>
                                 <exclude reference="AMV-gr-Lg7"/>
                                 <exclude reference="Oid-W0-96C"/>
                                 <exclude reference="Qc9-06-X7j"/>
@@ -859,17 +862,15 @@
                                 <exclude reference="jUa-WS-eCg"/>
                                 <exclude reference="pC5-OD-pkx"/>
                                 <exclude reference="xlW-G3-9AE"/>
-                                <exclude reference="rAc-S4-6fi"/>
-                                <exclude reference="rPk-9K-kfy"/>
                                 <exclude reference="Lr0-xX-Q3v"/>
                                 <exclude reference="cm9-S5-ROX"/>
                                 <exclude reference="s36-Ja-cga"/>
+                                <exclude reference="8fR-AH-giS"/>
+                                <exclude reference="X4Z-rv-hs1"/>
                                 <exclude reference="BOO-x7-su3"/>
                                 <exclude reference="bbR-fh-3mZ"/>
                                 <exclude reference="f0D-Fh-IyO"/>
                                 <exclude reference="nwy-no-x3j"/>
-                                <exclude reference="8fR-AH-giS"/>
-                                <exclude reference="X4Z-rv-hs1"/>
                                 <exclude reference="fNi-Gw-Pa8"/>
                                 <exclude reference="lc9-oP-jqr"/>
                                 <exclude reference="oa0-Wm-z20"/>
@@ -885,6 +886,12 @@
                                 <include reference="R0t-qs-XBL"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="1Tn-UH-DaZ"/>
+                                <include reference="Gys-Li-ono"/>
+                                <exclude reference="L9J-m5-vX6"/>
+                                <include reference="Pz6-YH-ztL"/>
+                                <exclude reference="ZY6-gi-SA3"/>
+                                <include reference="b88-ci-cZf"/>
                                 <include reference="4ta-So-wh7"/>
                                 <include reference="5Ox-Nu-0BA"/>
                                 <exclude reference="8pl-vl-tJ0"/>
@@ -898,27 +905,22 @@
                                 <exclude reference="gkT-Vg-RJb"/>
                                 <exclude reference="qp0-y4-8j6"/>
                                 <include reference="y3i-uF-K6f"/>
-                                <include reference="ln5-t9-wfO"/>
-                                <include reference="q1k-tC-be7"/>
-                                <include reference="t04-3z-WRf"/>
                                 <include reference="lVA-p4-a1I"/>
                                 <include reference="1TV-q4-OiM"/>
                                 <include reference="D19-Uv-RLf"/>
                                 <include reference="FUa-74-lQX"/>
-                                <include reference="1Tn-UH-DaZ"/>
-                                <include reference="Gys-Li-ono"/>
-                                <exclude reference="L9J-m5-vX6"/>
-                                <include reference="Pz6-YH-ztL"/>
-                                <exclude reference="ZY6-gi-SA3"/>
-                                <include reference="b88-ci-cZf"/>
                                 <include reference="niQ-Vn-9Bv"/>
                                 <exclude reference="vXd-eE-Cg2"/>
+                                <include reference="ln5-t9-wfO"/>
+                                <include reference="q1k-tC-be7"/>
+                                <include reference="t04-3z-WRf"/>
                                 <include reference="TxU-Hd-zrb"/>
                                 <include reference="ZRN-F0-rUN"/>
                                 <include reference="lPE-fR-bCz"/>
                                 <include reference="8gn-Fm-Kyo"/>
                                 <include reference="C9R-YZ-mSJ"/>
                                 <include reference="kOP-OC-hTj"/>
+                                <include reference="8Bo-wa-1VK"/>
                                 <include reference="2cg-u7-LoY"/>
                                 <include reference="E4e-RA-kRw"/>
                                 <include reference="N3B-Je-yqg"/>
@@ -926,7 +928,6 @@
                                 <include reference="ibv-yX-hja"/>
                                 <include reference="x0u-Jb-oxB"/>
                                 <include reference="yJm-v6-7hh"/>
-                                <include reference="8Bo-wa-1VK"/>
                                 <include reference="0Wh-LR-moW"/>
                                 <include reference="P1a-DN-BZY"/>
                                 <include reference="WPf-UP-YX8"/>
@@ -937,6 +938,8 @@
                                 <include reference="tQ7-W4-fne"/>
                                 <include reference="uRs-qd-BGM"/>
                                 <include reference="y9Y-dk-Slm"/>
+                                <include reference="rAc-S4-6fi"/>
+                                <include reference="rPk-9K-kfy"/>
                                 <include reference="AMV-gr-Lg7"/>
                                 <include reference="Oid-W0-96C"/>
                                 <include reference="Qc9-06-X7j"/>
@@ -946,17 +949,15 @@
                                 <include reference="jUa-WS-eCg"/>
                                 <include reference="pC5-OD-pkx"/>
                                 <include reference="xlW-G3-9AE"/>
-                                <include reference="rAc-S4-6fi"/>
-                                <include reference="rPk-9K-kfy"/>
                                 <include reference="Lr0-xX-Q3v"/>
                                 <include reference="cm9-S5-ROX"/>
                                 <include reference="s36-Ja-cga"/>
+                                <include reference="8fR-AH-giS"/>
+                                <include reference="X4Z-rv-hs1"/>
                                 <include reference="BOO-x7-su3"/>
                                 <include reference="bbR-fh-3mZ"/>
                                 <include reference="f0D-Fh-IyO"/>
                                 <include reference="nwy-no-x3j"/>
-                                <include reference="8fR-AH-giS"/>
-                                <include reference="X4Z-rv-hs1"/>
                                 <include reference="fNi-Gw-Pa8"/>
                                 <include reference="lc9-oP-jqr"/>
                                 <include reference="oa0-Wm-z20"/>
@@ -968,13 +969,14 @@
                         </variation>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74t-7E-C7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="22.5" y="348"/>
         </scene>
-        <!--Game-->
+        <!--New Buttons Option?-->
         <scene sceneID="A6h-FH-TnR">
             <objects>
-                <viewController title="Game" id="xPy-Nh-XOC" sceneMemberID="viewController">
+                <viewController title="New Buttons Option?" id="xPy-Nh-XOC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OzN-ii-hzd"/>
                         <viewControllerLayoutGuide type="bottom" id="bQC-HT-DnY"/>
@@ -988,15 +990,12 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttE-V5-J9h" userLabel="Single Player">
                                         <rect key="frame" x="55" y="91" width="75" height="75"/>
-                                        <state key="normal" image="sp">
+                                        <state key="normal" image="spNew">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1q-d7-PYe" userLabel="Multi-player">
-                                        <rect key="frame" x="190" y="91" width="75" height="75"/>
-                                        <state key="normal" image="mp">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="47" y="84" width="90" height="90"/>
+                                        </variation>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SINGLE PLAYER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ao-44-z29">
                                         <rect key="frame" x="39" y="169" width="107" height="21"/>
@@ -1010,6 +1009,15 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1q-d7-PYe" userLabel="Multi-player">
+                                        <rect key="frame" x="190" y="91" width="75" height="75"/>
+                                        <state key="normal" image="mpNew">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="182" y="84" width="90" height="90"/>
+                                        </variation>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.51552641180000003" green="0.51694420669999996" blue="0.56689967109999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -1105,7 +1113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bab-qC-B8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552.5" y="-634.5"/>
+            <point key="canvasLocation" x="-253.5" y="-156"/>
         </scene>
     </scenes>
     <resources>
@@ -1120,11 +1128,13 @@
         <image name="levels" width="60" height="60"/>
         <image name="menu" width="25" height="25"/>
         <image name="mp" width="75" height="75"/>
+        <image name="mpNew" width="90" height="90"/>
         <image name="mpTab" width="35" height="35"/>
         <image name="mpTabLight" width="40" height="40"/>
         <image name="passnplay" width="60" height="60"/>
         <image name="settings" width="60" height="60"/>
         <image name="sp" width="75" height="75"/>
+        <image name="spNew" width="90" height="90"/>
         <image name="spTab" width="35" height="35"/>
         <image name="spTabLight" width="40" height="40"/>
         <image name="stats" width="60" height="60"/>
