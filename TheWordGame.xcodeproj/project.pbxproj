@@ -15,6 +15,7 @@
 		BAF13B861AD98FC3007EEB0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B7F1AD98FC2007EEB0D /* Images.xcassets */; };
 		BAF13B871AD98FC3007EEB0D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B801AD98FC2007EEB0D /* Info.plist */; };
 		BAF13B881AD98FC3007EEB0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF13B811AD98FC2007EEB0D /* ViewController.swift */; };
+		CC03E99A1ADB3AF100C0F7ED /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03E9991ADB3AF100C0F7ED /* Dictionary.swift */; };
 		CCC4F5721ADB30AE0094BA72 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC4F5711ADB30AE0094BA72 /* Game.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		BAF13B7F1AD98FC2007EEB0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BAF13B801AD98FC2007EEB0D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAF13B811AD98FC2007EEB0D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC03E9991ADB3AF100C0F7ED /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		CCC4F5711ADB30AE0094BA72 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				CCC4F5711ADB30AE0094BA72 /* Game.swift */,
+				CC03E9991ADB3AF100C0F7ED /* Dictionary.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				187E00DA1ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift in Sources */,
 				BAF13B851AD98FC3007EEB0D /* ContentViewController.swift in Sources */,
 				BAF13B821AD98FC2007EEB0D /* AppDelegate.swift in Sources */,
+				CC03E99A1ADB3AF100C0F7ED /* Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +238,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -271,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
