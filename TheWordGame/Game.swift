@@ -83,13 +83,13 @@ class Game {
             indexOfNewChar = countElements(newWord) - 1;
             
             // If the added character is an 's'...
-            if newWord[advance(newWord.startIndex, indexOfNewChar)] == "s" {
+            if charAt(newWord, index:indexOfNewChar) == "s" {
                 logMessage = "Cannot simply add 's'"
                 return false
             }
-            
+        
             // If the last letter of the current word was 'e', and the user added a 'd' to the end...
-            if newWord[advance(newWord.startIndex, indexOfNewChar-1)] == "e" && newWord[advance(newWord.startIndex, indexOfNewChar)] == "d" {
+            if charAt(newWord, index:indexOfNewChar-1) == "e" && charAt(newWord, index: indexOfNewChar) == "d" {
                 logMessage = "Cannot simply make verb past tense"
                 return false
             }
@@ -105,18 +105,72 @@ class Game {
     }
     
     func isValidSub(newWord: String, currentWord: String) -> Bool {
+        // If the new word is not only one letter less than the current word...
+        if (countElements(newWord) != countElements(currentWord) - 1) {
+            // Cannot be valid subtraction
+            return false;
+        }
         
+        // A variable to store the original index of the character that has been deleted
+        var indexOfDeletedChar = -1;
+        // Cycles through the indexes of the current word
+        for var i = 0; i < countElements(currentWord); i++ {
+            // If the character in the new word at the current index is not equal to the
+            // character in the current word at the current index...
+            if (charAt(newWord, index: i) != charAt(currentWord, index: i)) {
+                // Set the variable to the index
+                indexOfDeletedChar = i;
+                // Stop search
+                break;
+            }
+        }
+        
+        // If the variable remains unchanged...
+        if indexOfDeletedChar == -1 {
+            // The character must have been removed from the end of the current word.
+            // Set the variable to the last index of the current word
+            indexOfDeletedChar = countElements(currentWord) - 1;
+        }
+        
+        // If the rest of the word is the same after the deleted character...
+        if restOfWordIsSame(newWord, currentWord: currentWord, index: indexOfDeletedChar-1, offset: -1) {
+            return true
+        }
+
         return false
     }
     
     func isValidExc(newWord: String, currentWord: String) -> Bool {
+        // If the new word and the current word do not have equal lengths...
+        if countElements(newWord) != countElements(currentWord) {
+            // Cannot be valid swap
+            return false
+        }
+        
+        // A variable to store the original index of the character that has been deleted
+        var indexOfSwappedChar = -1;
+        // Cycles through the indexes of the new word
+        // (Both words have the same length, so it doesn't actually matter which one we cycle through)
+        for var i = 0; i < countElements(newWord); i++ {
+            // If the character in the new word at the current index is not equal to the
+            // character in the current word at the current index...
+            if charAt(newWord, index: i) != charAt(currentWord, index: i) {
+                // Set the variable to the index
+                indexOfSwappedChar = i;
+                // Stop the search
+                break;
+            }
+        }
+        
+        // If the index variable was changed, and the rest of the word is the same after the swapped character...
+        if indexOfSwappedChar != -1 && restOfWordIsSame(newWord, currentWord: currentWord, index: indexOfSwappedChar, offset: 0) {
+            return true
+        }
         
         return false
     }
     
     func restOfWordIsSame(newWord: String, currentWord: String, index: Int, offset: Int) -> Bool {
-       
-        
         for var i = index + 1; i < countElements(newWord); i++ {
             if charAt(newWord, index: i) != charAt(currentWord, index: i - offset) {
                 return false
