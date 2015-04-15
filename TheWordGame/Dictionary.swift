@@ -9,6 +9,13 @@
 import Foundation
 
 class Dictionary {
+    
+    var dictionary:Array<String>!
+    
+    class func initialize() -> Void {
+        println("Dictionary initialized")
+    }
+    
     class func isEnglishWord() -> Bool {
         return true;
     }

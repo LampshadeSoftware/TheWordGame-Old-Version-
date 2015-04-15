@@ -69,12 +69,11 @@ class Game {
         
         var indexOfNewChar = -1
         for var i=0; i<countElements(currentWord); i++ {
-            if charAt(newWord, index: i) == charAt(currentWord, index: i) {
+            if charAt(newWord, index: i) != charAt(currentWord, index: i) {
                 indexOfNewChar = i;
                 break;
             }
         }
-        
         
         // If the index variable remains unchanged...
         if indexOfNewChar == -1 {
@@ -114,7 +113,7 @@ class Game {
         // A variable to store the original index of the character that has been deleted
         var indexOfDeletedChar = -1;
         // Cycles through the indexes of the current word
-        for var i = 0; i < countElements(currentWord); i++ {
+        for var i = 0; i < countElements(newWord); i++ {
             // If the character in the new word at the current index is not equal to the
             // character in the current word at the current index...
             if (charAt(newWord, index: i) != charAt(currentWord, index: i)) {
