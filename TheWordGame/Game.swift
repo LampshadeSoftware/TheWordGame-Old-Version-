@@ -12,13 +12,14 @@ class Game {
     var currentWord: String!
     var wordCount: Int!
     var usedWords = [String]()
-
+    var currentWordString: LSSString!
     var logMessage: String!
     
 
     func isValidPlay(newWord: String, currentWord: String) -> Bool {
         // Updates to the log message to a default message if it is not changed throughout this method
         logMessage = "Invalid play!";
+        
         
         
         // If the new word is blank...
