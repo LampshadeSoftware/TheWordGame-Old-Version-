@@ -8,15 +8,15 @@
 
 import Foundation
 
-class LSSString {
+class LSSString : Printable{
     private var string: String!
+    
+    var description: String {
+        return string
+    }
     
     init(string: String) {
         self.string = string
-    }
-    
-    func test (left: LSSString, right: LSSString) -> LSSString {
-        return LSSString(string: left.string + right.string)
     }
     
     func getRawString() -> String {
@@ -29,7 +29,7 @@ class LSSString {
         return string == otherString
     }
     func equals(otherString: LSSString) -> Bool {
-        return string == otherString.string
+        return equals(otherString.string)
     }
     func equalsIgnoreCase(otherString: String) -> Bool {
             var myLowercase = string.lowercaseString
@@ -37,9 +37,7 @@ class LSSString {
             return myLowercase == otherLowercase
     }
     func equalsIgnoreCase(otherString: LSSString) -> Bool {
-        var myLowercase = string.lowercaseString
-        var otherLowercase = otherString.string.lowercaseString
-        return myLowercase == otherLowercase
+        return equalsIgnoreCase(otherString.string)
     }
     func indexOf(char: Character) -> Int {
         for var i = 0; i < countElements(string); i++ {
@@ -58,6 +56,16 @@ class LSSString {
     }
     func append(otherString: String) -> LSSString {
         return LSSString(string: string + otherString)
+    }
+    
+    func substring(startIndex: Int) -> LSSString {
+        return LSSString(string: string.substringFromIndex(string.startIndex))
+    }
+    
+    func substring(startIndex: Int, endIndex: Int) -> LSSString {
+        var range: Range<String.Index>
+        range = Range<String.Index>(start: advance(string.startIndex, startIndex), end: advance(string.startIndex, endIndex+1))
+        return LSSString(string: string.substringWithRange(range))
     }
     
 }

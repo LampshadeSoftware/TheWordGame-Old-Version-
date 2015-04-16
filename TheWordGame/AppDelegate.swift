@@ -22,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pageControl.currentPageIndicatorTintColor = UIColor.lightGrayColor()
         pageControl.backgroundColor = UIColor.whiteColor()
         
-        
         println("TWG: initialized")
         return true
     }
