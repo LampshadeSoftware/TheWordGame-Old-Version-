@@ -15,10 +15,10 @@ class LSSMutableString : LSSString {
         super.init(string: string)
     }
     
-    func changeToString(string: String) {
+    override func changeToString(string: String) {
         self.string = string
     }
-    func changeToString(string: LSSString) {
+    override func changeToString(string: LSSString) {
         self.string = string.getRawString()
     }
 }
