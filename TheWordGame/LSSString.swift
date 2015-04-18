@@ -68,5 +68,12 @@ class LSSString : Printable{
         return LSSString(string: string.substringWithRange(range))
     }
     
+    func changeToString(string: String) {
+        self.string = string
+    }
+    func changeToString(string: LSSString) {
+        self.string = string.getRawString()
+    }
+    
 }
 

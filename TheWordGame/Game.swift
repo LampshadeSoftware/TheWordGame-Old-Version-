@@ -12,7 +12,7 @@ class Game {
     var currentWord: LSSString!
     var wordCount: Int!
     var usedWords = [LSSString]()
-    var logMessage: LSSMutableString!
+    var logMessage: LSSString!
     
     init(startWord: String) {
         currentWord = LSSString(string: startWord)
