@@ -8,12 +8,13 @@
 
 import UIKit
 
+var finalDictionary:Dictionary!
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         println("TWG: initializing launch options")
@@ -21,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pageControl.pageIndicatorTintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
         pageControl.currentPageIndicatorTintColor = UIColor.lightGrayColor()
         pageControl.backgroundColor = UIColor.whiteColor()
+        
+        finalDictionary = Dictionary()
         
         println("TWG: initialized")
         return true

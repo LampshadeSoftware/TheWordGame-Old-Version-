@@ -9,7 +9,7 @@
 import Foundation
 
 class LSSString : Printable{
-    private var string: String!
+    internal var string: String!
     
     var description: String {
         return string

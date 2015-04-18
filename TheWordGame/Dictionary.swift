@@ -10,10 +10,20 @@ import Foundation
 
 class Dictionary {
     
-    var dictionary:Array<String>!
+    let dictionary: Array<String>!
     
-    class func initialize() -> Void {
+    init() {
+        let path: String = "~/Dictionary.txt".stringByExpandingTildeInPath
+        // Define the contents of Dictionary.txt as a single string
+        let entireDictionary: String = String(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil)!
+        
+        let str = "one two three four"
+        let arr = str.componentsSeparatedByString(" ")
+        
+        println(arr)
+        
         println("Dictionary initialized")
+
     }
     
     class func isEnglishWord() -> Bool {
