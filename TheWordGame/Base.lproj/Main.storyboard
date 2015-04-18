@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eTf-rO-evW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bc8-rE-q1U">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
@@ -20,6 +20,22 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="0MC-Sp-FHU">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="dH2-HE-3Eh"/>
+                                    <constraint firstAttribute="height" constant="107" id="x78-N8-pCQ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dH2-HE-3Eh"/>
+                                        <exclude reference="x78-N8-pCQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="dH2-HE-3Eh"/>
+                                        <include reference="x78-N8-pCQ"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7e-ym-PEF">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -54,40 +70,13 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaK-u6-T6y">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.22745098039215686" green="0.28627450980392155" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="gXj-Mn-1uf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="   Username">
-                                    <color key="titleColor" red="0.38823529411764707" green="0.45882352941176469" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="gXj-Mn-1uf"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="gXj-Mn-1uf"/>
-                                    </mask>
-                                </variation>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMj-Bm-2WJ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.2274509804" green="0.28627450980000002" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="aaC-WU-Wvc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="   ••••••••">
                                     <color key="titleColor" red="0.38823529410000002" green="0.45882352939999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -108,6 +97,15 @@
                                     </mask>
                                 </variation>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DN-iL-6Ae">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.38823529411764707" green="0.45882352941176469" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="48" y="736" width="304" height="21"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZS-Mf-MJo">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
@@ -154,7 +152,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" constant="170"/>
                                     </constraint>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.38823529411764707" green="0.45882352941176469" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -173,7 +171,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Nm6-8k-Exx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.96470588235294119" green="0.63137254901960782" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -187,15 +185,33 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DN-iL-6Ae">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaK-u6-T6y">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.22745098039215686" green="0.28627450980392155" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="gXj-Mn-1uf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="0.38823529411764707" green="0.45882352941176469" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="48" y="736" width="304" height="21"/>
+                                <state key="normal" title="   Username">
+                                    <color key="titleColor" red="0.38823529411764707" green="0.45882352941176469" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gXj-Mn-1uf"/>
+                                    </mask>
                                 </variation>
-                            </label>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="gXj-Mn-1uf"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.17647058823529413" green="0.22352941176470589" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -211,7 +227,7 @@
                             <constraint firstItem="0MC-Sp-FHU" firstAttribute="centerX" secondItem="RnK-4N-R5X" secondAttribute="centerX" id="Eit-HP-evj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EhG-kF-crJ" secondAttribute="trailing" constant="17" id="HSE-Hc-BqV"/>
                             <constraint firstItem="POg-CJ-tpO" firstAttribute="firstBaseline" secondItem="rtf-EX-y7D" secondAttribute="firstBaseline" id="Hf2-qc-fob">
-                                <variation key="heightClass=regular-widthClass=compact" constant="2"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="3"/>
                             </constraint>
                             <constraint firstItem="cRL-LU-CAb" firstAttribute="leading" secondItem="POg-CJ-tpO" secondAttribute="trailing" constant="8" symbolic="YES" id="IdF-O9-dSn"/>
                             <constraint firstItem="IOB-6w-jId" firstAttribute="top" secondItem="6DN-iL-6Ae" secondAttribute="bottom" constant="51" id="LQD-Uz-RlI">
@@ -219,10 +235,10 @@
                             </constraint>
                             <constraint firstItem="POg-CJ-tpO" firstAttribute="top" secondItem="cRL-LU-CAb" secondAttribute="top" id="Ooh-y8-2Qv"/>
                             <constraint firstItem="rtf-EX-y7D" firstAttribute="top" secondItem="cMj-Bm-2WJ" secondAttribute="bottom" constant="9" id="Q93-LS-C0T">
-                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="19"/>
                             </constraint>
                             <constraint firstItem="0MC-Sp-FHU" firstAttribute="top" secondItem="HOd-hI-PUf" secondAttribute="bottom" constant="54" id="Qvr-IU-Cp3">
-                                <variation key="heightClass=regular-widthClass=compact" constant="19"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="28"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="kZS-Mf-MJo" secondAttribute="centerX" id="SSW-zO-Vz0"/>
                             <constraint firstItem="z7e-ym-PEF" firstAttribute="top" secondItem="HOd-hI-PUf" secondAttribute="bottom" constant="16" id="TUg-rk-IbA">
@@ -234,7 +250,7 @@
                             </constraint>
                             <constraint firstItem="vaK-u6-T6y" firstAttribute="leading" secondItem="RnK-4N-R5X" secondAttribute="leadingMargin" constant="17" id="abz-5f-axR"/>
                             <constraint firstItem="IOB-6w-jId" firstAttribute="top" secondItem="0MC-Sp-FHU" secondAttribute="bottom" constant="618" id="gQu-Ln-jA3">
-                                <variation key="heightClass=regular-widthClass=compact" constant="654"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="645"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="6DN-iL-6Ae" secondAttribute="centerX" id="gqw-ks-qtn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cMj-Bm-2WJ" secondAttribute="trailing" constant="17" id="h8t-4r-C42"/>
@@ -250,7 +266,7 @@
                             <constraint firstItem="EhG-kF-crJ" firstAttribute="leading" secondItem="RnK-4N-R5X" secondAttribute="leadingMargin" constant="17" id="nIW-lm-8nb"/>
                             <constraint firstItem="vaK-u6-T6y" firstAttribute="height" secondItem="cMj-Bm-2WJ" secondAttribute="height" id="q3o-Eq-aeK"/>
                             <constraint firstItem="vaK-u6-T6y" firstAttribute="top" secondItem="0MC-Sp-FHU" secondAttribute="bottom" constant="37" id="rpA-Qy-7fF">
-                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="27"/>
                             </constraint>
                             <constraint firstItem="kZS-Mf-MJo" firstAttribute="top" secondItem="6DN-iL-6Ae" secondAttribute="bottom" constant="-4" id="xFd-pv-hmg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vaK-u6-T6y" secondAttribute="trailing" constant="17" id="y4g-La-JM7"/>
@@ -260,13 +276,13 @@
                                 <exclude reference="0MC-Sp-FHU"/>
                                 <exclude reference="z7e-ym-PEF"/>
                                 <exclude reference="EhG-kF-crJ"/>
-                                <exclude reference="vaK-u6-T6y"/>
                                 <exclude reference="cMj-Bm-2WJ"/>
+                                <exclude reference="6DN-iL-6Ae"/>
                                 <exclude reference="kZS-Mf-MJo"/>
                                 <exclude reference="POg-CJ-tpO"/>
                                 <exclude reference="cRL-LU-CAb"/>
                                 <exclude reference="rtf-EX-y7D"/>
-                                <exclude reference="6DN-iL-6Ae"/>
+                                <exclude reference="vaK-u6-T6y"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Eit-HP-evj"/>
@@ -309,13 +325,13 @@
                                 <include reference="0MC-Sp-FHU"/>
                                 <include reference="z7e-ym-PEF"/>
                                 <include reference="EhG-kF-crJ"/>
-                                <include reference="vaK-u6-T6y"/>
                                 <include reference="cMj-Bm-2WJ"/>
+                                <include reference="6DN-iL-6Ae"/>
                                 <include reference="kZS-Mf-MJo"/>
                                 <include reference="POg-CJ-tpO"/>
                                 <include reference="cRL-LU-CAb"/>
                                 <include reference="rtf-EX-y7D"/>
-                                <include reference="6DN-iL-6Ae"/>
+                                <include reference="vaK-u6-T6y"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Eit-HP-evj"/>
@@ -357,7 +373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKB-MR-6KI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-37.5" y="-301.5"/>
+            <point key="canvasLocation" x="-196" y="-382"/>
         </scene>
         <!--Freeplay-->
         <scene sceneID="uz3-oL-yEg">
