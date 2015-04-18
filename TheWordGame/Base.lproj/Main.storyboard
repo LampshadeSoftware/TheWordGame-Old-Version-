@@ -8,10 +8,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="1bf-gb-Ihp">
             <objects>
-                <viewController id="Bc8-rE-q1U" sceneMemberID="viewController">
+                <viewController id="Bc8-rE-q1U" customClass="LoginViewController" customModule="TheWordGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HOd-hI-PUf"/>
                         <viewControllerLayoutGuide type="bottom" id="IOB-6w-jId"/>
@@ -69,6 +69,33 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="2pP-U6-4Cq"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaK-u6-T6y">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.22745098039215686" green="0.28627450980392155" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="gXj-Mn-1uf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="   Username">
+                                    <color key="titleColor" red="0.38823529411764707" green="0.45882352941176469" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gXj-Mn-1uf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="gXj-Mn-1uf"/>
                                     </mask>
                                 </variation>
                             </button>
@@ -181,33 +208,14 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaK-u6-T6y">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.22745098039215686" green="0.28627450980392155" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="gXj-Mn-1uf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="   Username">
-                                    <color key="titleColor" red="0.38823529411764707" green="0.45882352941176469" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="gXj-Mn-1uf"/>
-                                    </mask>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2f4-oo-ygW" customClass="Username">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="455" width="97" height="30"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="gXj-Mn-1uf"/>
-                                    </mask>
-                                </variation>
-                            </button>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.17647058823529413" green="0.22352941176470589" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -272,13 +280,14 @@
                                 <exclude reference="0MC-Sp-FHU"/>
                                 <exclude reference="z7e-ym-PEF"/>
                                 <exclude reference="EhG-kF-crJ"/>
+                                <exclude reference="vaK-u6-T6y"/>
                                 <exclude reference="cMj-Bm-2WJ"/>
                                 <exclude reference="6DN-iL-6Ae"/>
                                 <exclude reference="kZS-Mf-MJo"/>
                                 <exclude reference="POg-CJ-tpO"/>
                                 <exclude reference="cRL-LU-CAb"/>
                                 <exclude reference="rtf-EX-y7D"/>
-                                <exclude reference="vaK-u6-T6y"/>
+                                <exclude reference="2f4-oo-ygW"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="gqw-ks-qtn"/>
@@ -321,13 +330,14 @@
                                 <include reference="0MC-Sp-FHU"/>
                                 <include reference="z7e-ym-PEF"/>
                                 <include reference="EhG-kF-crJ"/>
+                                <include reference="vaK-u6-T6y"/>
                                 <include reference="cMj-Bm-2WJ"/>
                                 <include reference="6DN-iL-6Ae"/>
                                 <include reference="kZS-Mf-MJo"/>
                                 <include reference="POg-CJ-tpO"/>
                                 <include reference="cRL-LU-CAb"/>
                                 <include reference="rtf-EX-y7D"/>
-                                <include reference="vaK-u6-T6y"/>
+                                <include reference="2f4-oo-ygW"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="gqw-ks-qtn"/>
@@ -366,10 +376,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="Username" destination="2f4-oo-ygW" id="Rpi-Ai-s1C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKB-MR-6KI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196" y="-382"/>
+            <point key="canvasLocation" x="-196.5" y="-382.5"/>
         </scene>
         <!--Freeplay-->
         <scene sceneID="uz3-oL-yEg">

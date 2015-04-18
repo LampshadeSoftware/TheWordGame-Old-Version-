@@ -10,6 +10,7 @@
 		187E00DA1ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E00D91ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift */; };
 		BA25A5E11ADC0C8A003CA5BF /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25A5E01ADC0C8A003CA5BF /* CircleViewController.swift */; };
 		BA6F25AC1ADC450600F511FE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F25AB1ADC450600F511FE /* MenuViewController.swift */; };
+		BAD0070F1AE2C80C001CAB19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0070E1AE2C80C001CAB19 /* LoginViewController.swift */; };
 		BAF13B821AD98FC2007EEB0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF13B791AD98FC2007EEB0D /* AppDelegate.swift */; };
 		BAF13B831AD98FC2007EEB0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B7A1AD98FC2007EEB0D /* LaunchScreen.xib */; };
 		BAF13B841AD98FC3007EEB0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF13B7C1AD98FC2007EEB0D /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		78E75F3C1AC5FC48001A93F1 /* TheWordGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWordGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA25A5E01ADC0C8A003CA5BF /* CircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		BA6F25AB1ADC450600F511FE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		BAD0070E1AE2C80C001CAB19 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BAF13B791AD98FC2007EEB0D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAF13B7B1AD98FC2007EEB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BAF13B7D1AD98FC2007EEB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				187E00D41ADB243A00D673C4 /* Single Player */,
 				187E00D51ADB245F00D673C4 /* Multiplayer */,
 				BA6F25AB1ADC450600F511FE /* MenuViewController.swift */,
+				BAD0070E1AE2C80C001CAB19 /* LoginViewController.swift */,
 			);
 			path = TheWordGame;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				BAF13B821AD98FC2007EEB0D /* AppDelegate.swift in Sources */,
 				CC03E99A1ADB3AF100C0F7ED /* Dictionary.swift in Sources */,
 				BA6F25AC1ADC450600F511FE /* MenuViewController.swift in Sources */,
+				BAD0070F1AE2C80C001CAB19 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
