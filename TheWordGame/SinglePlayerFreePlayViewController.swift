@@ -17,11 +17,18 @@ class SinglePlayerFreePlayViewController: UIViewController {
     @IBOutlet weak var lastWord2: UILabel!
     @IBOutlet weak var lastWord3: UILabel!
     
+    var currentGame: Game!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        if currentGame == nil {
+            currentGame = Game(startWord: "word")
+        }
+        
+        currentWord.text = NSString(string: "test")
+        var test = NSString(string: "test")
+        test.
     }
 
     override func didReceiveMemoryWarning() {

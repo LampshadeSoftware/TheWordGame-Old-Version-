@@ -20,7 +20,13 @@ class Game {
         logMessage = LSSMutableString(string: "")
     }
     
-
+    func updateGame(newCurrentWord: String) {
+        currentWord = LSSString(string: newCurrentWord)
+        usedWords.append(currentWord)
+        wordCount = wordCount + 1
+    }
+    
+    
     func isValidPlay(newWord: LSSString, onWord currentWord: LSSString) -> Bool {
         // Updates to the log message to a default message if it is not changed throughout this method
         logMessage.changeToString("Invalid play!")

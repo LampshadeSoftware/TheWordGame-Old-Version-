@@ -19,7 +19,7 @@ class LSSString : Printable{
         self.string = string
     }
     
-    func getRawString() -> String {
+    var getRawString: String {
         return string;
     }
     func charAt(index: Int) -> Character {
@@ -72,7 +72,7 @@ class LSSString : Printable{
         self.string = string
     }
     func changeToString(string: LSSString) {
-        self.string = string.getRawString()
+        self.string = string.getRawString
     }
     
 }
