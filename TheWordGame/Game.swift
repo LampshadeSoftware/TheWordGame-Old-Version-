@@ -17,7 +17,7 @@ class Game {
     init(startWord: String) {
         currentWord = LSSString(string: startWord)
         wordCount = 0
-        logMessage = LSSMutableString(string: "")
+        logMessage = LSSString(string: "")
     }
     
     func updateGame(newCurrentWord: String) {
