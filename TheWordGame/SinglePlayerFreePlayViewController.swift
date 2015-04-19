@@ -28,7 +28,7 @@ class SinglePlayerFreePlayViewController: UIViewController {
         
         currentWord.text = NSString(string: "test")
         var test = NSString(string: "test")
-        test.
+    
     }
 
     override func didReceiveMemoryWarning() {

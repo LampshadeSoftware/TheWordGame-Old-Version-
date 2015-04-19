@@ -21,7 +21,6 @@
 		CC03E99A1ADB3AF100C0F7ED /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03E9991ADB3AF100C0F7ED /* Dictionary.swift */; };
 		CC03E99C1ADDFC4100C0F7ED /* LSSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03E99B1ADDFC4100C0F7ED /* LSSString.swift */; };
 		CCC4F5721ADB30AE0094BA72 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC4F5711ADB30AE0094BA72 /* Game.swift */; };
-		CCF1FA9D1AE03FB30086206D /* LSSMutableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1FA9C1AE03FB30086206D /* LSSMutableString.swift */; };
 		CCF1FA9F1AE1616B0086206D /* Dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = CCF1FA9E1AE1616B0086206D /* Dictionary.txt */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		CC03E9991ADB3AF100C0F7ED /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		CC03E99B1ADDFC4100C0F7ED /* LSSString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSSString.swift; sourceTree = "<group>"; };
 		CCC4F5711ADB30AE0094BA72 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		CCF1FA9C1AE03FB30086206D /* LSSMutableString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSSMutableString.swift; sourceTree = "<group>"; };
 		CCF1FA9E1AE1616B0086206D /* Dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dictionary.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +76,6 @@
 				CCC4F5711ADB30AE0094BA72 /* Game.swift */,
 				CC03E9991ADB3AF100C0F7ED /* Dictionary.swift */,
 				CC03E99B1ADDFC4100C0F7ED /* LSSString.swift */,
-				CCF1FA9C1AE03FB30086206D /* LSSMutableString.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -193,7 +190,6 @@
 			files = (
 				BA25A5E11ADC0C8A003CA5BF /* CircleViewController.swift in Sources */,
 				CCC4F5721ADB30AE0094BA72 /* Game.swift in Sources */,
-				CCF1FA9D1AE03FB30086206D /* LSSMutableString.swift in Sources */,
 				BAF13B881AD98FC3007EEB0D /* ViewController.swift in Sources */,
 				CC03E99C1ADDFC4100C0F7ED /* LSSString.swift in Sources */,
 				187E00DA1ADB263400D673C4 /* SinglePlayerFreePlayViewController.swift in Sources */,
