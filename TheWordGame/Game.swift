@@ -9,44 +9,46 @@
 import Foundation
 
 class Game {
-    var currentWord: LSSString!
+    var currentWord: NSString!
     var wordCount: Int!
-    var usedWords = [LSSString]()
-    var logMessage: LSSString!
+    var usedWords: [NSString]!
+    var logMessage: NSString!
     
     init(startWord: String) {
-        currentWord = LSSString(string: startWord)
+        currentWord = startWord
         wordCount = 0
-        logMessage = LSSString(string: "")
+        logMessage = ""
+        usedWords = ["", "", "", currentWord]
     }
     
     func updateGame(newCurrentWord: String) {
-        currentWord = LSSString(string: newCurrentWord)
+        currentWord = newCurrentWord
         usedWords.append(currentWord)
+        logMessage = ""
         wordCount = wordCount + 1
     }
     
     
-    func isValidPlay(newWord: LSSString, onWord currentWord: LSSString) -> Bool {
+    func isValidPlay(newWord: NSString, onWord currentWord: NSString) -> Bool {
         // Updates to the log message to a default message if it is not changed throughout this method
-        logMessage.changeToString("Invalid play!")
+        logMessage = "Invalid play"
         
         // If the new word is blank...
-        if newWord.equals("") {
-            logMessage.changeToString("You didn't type anything.")
+        if newWord.isEqualToString("") {
+            logMessage = "You didn't type anything"
             return false;
         }
         
         // If the new word is "fjord"...
-        if newWord.equals("fjord") {
-            logMessage.changeToString("You know goddamn well what you did")
+        if newWord.isEqualToString("fjord") {
+            logMessage = "You know goddamn well what you did"
             return false;
         }
         
         // Cycles through all the words in the usedWords array
         for word in usedWords {
-            if(word.equals(newWord)) {
-                logMessage.changeToString("\(word) has already been played")
+            if(word.isEqualToString(newWord)) {
+                logMessage = "\(word) has already been played"
                 return false;
             }
         }
@@ -55,13 +57,13 @@ class Game {
             if Dictionary.isEnglishWord() {
                 var lastWord = usedWords[usedWords.count - 2]
                 if isValidAdd(newWord, onWord: lastWord) || isValidSub(newWord, onWord: lastWord) || isValidExc(newWord, onWord: lastWord) {
-                    logMessage.changeToString("Double play!")
+                    logMessage = "Double play!"
                     return false
                 }
                 return true
             }
             else {
-                logMessage.changeToString("\(newWord) is not an English word.")
+                logMessage = "\(newWord) is not an English word."
             }
         }
         
@@ -69,16 +71,16 @@ class Game {
         return false;
     }
     
-    func isValidAdd(newWord: LSSString, onWord currentWord: LSSString) -> Bool {
+    func isValidAdd(newWord: NSString, onWord currentWord: NSString) -> Bool {
         // If the new word is not only one letter longer than the current word...
-        if newWord.length() != currentWord.length() + 1 {
+        if newWord.length != currentWord.length + 1 {
             // Cannot be a valid addition
             return false;
         }
         
         var indexOfNewChar = -1
-        for var i=0; i < currentWord.length(); i++ {
-            if newWord.charAt(i) != newWord.charAt(i) {
+        for var i=0; i < currentWord.length; i++ {
+            if newWord.characterAtIndex(i) != newWord.characterAtIndex(i) {
                 indexOfNewChar = i;
                 break;
             }
@@ -88,23 +90,27 @@ class Game {
         if indexOfNewChar == -1 {
             // The new character must be at the end of the word, so we can assume that for everything in this block.
             // Set the variable to the last index of the new word
-            indexOfNewChar = newWord.length() - 1;
+            indexOfNewChar = newWord.length - 1;
             
+            let s:unichar = ("s" as NSString).characterAtIndex(0)
+            let e:unichar = ("e" as NSString).characterAtIndex(0)
+            let d:unichar = ("e" as NSString).characterAtIndex(0)
             // If the added character is an 's'...
-            if newWord.charAt(indexOfNewChar) == "s" {
-                logMessage.changeToString("Cannot simply add 's'")
+            if newWord.characterAtIndex(indexOfNewChar) == s {
+                logMessage = "Cannot simply add 's'"
                 return false
             }
         
             // If the last letter of the current word was 'e', and the user added a 'd' to the end...
-            if newWord.charAt(indexOfNewChar - 1) == "e" && newWord.charAt(indexOfNewChar) == "d" {
-                logMessage.changeToString("Cannot simply make verb past tense")
+            if newWord.characterAtIndex(indexOfNewChar - 1) == e && newWord.characterAtIndex(indexOfNewChar) == d {
+                logMessage = "Cannot simply make verb past tense"
                 return false
             }
         }
         
         // If the rest of the word is the same after the added letter...
         if restOfWordIsSame(newWord, to: currentWord, fromIndex: indexOfNewChar, withOffset: 1) {
+            println("\(newWord) is a valid add on \(currentWord)")
             return true
         }
         
@@ -112,9 +118,9 @@ class Game {
         return false;
     }
     
-    func isValidSub(newWord: LSSString, onWord currentWord: LSSString) -> Bool {
+    func isValidSub(newWord: NSString, onWord currentWord: NSString) -> Bool {
         // If the new word is not only one letter less than the current word...
-        if (newWord.length() != currentWord.length() - 1) {
+        if (newWord.length != currentWord.length - 1) {
             // Cannot be valid subtraction
             return false;
         }
@@ -122,10 +128,10 @@ class Game {
         // A variable to store the original index of the character that has been deleted
         var indexOfDeletedChar = -1;
         // Cycles through the indexes of the current word
-        for var i = 0; i < newWord.length(); i++ {
+        for var i = 0; i < newWord.length; i++ {
             // If the character in the new word at the current index is not equal to the
             // character in the current word at the current index...
-            if (newWord.charAt(i) != currentWord.charAt(i)) {
+            if (newWord.characterAtIndex(i) != currentWord.characterAtIndex(i)) {
                 // Set the variable to the index
                 indexOfDeletedChar = i;
                 // Stop search
@@ -137,7 +143,7 @@ class Game {
         if indexOfDeletedChar == -1 {
             // The character must have been removed from the end of the current word.
             // Set the variable to the last index of the current word
-            indexOfDeletedChar = currentWord.length() - 1;
+            indexOfDeletedChar = currentWord.length - 1;
         }
         
         // If the rest of the word is the same after the deleted character...
@@ -148,9 +154,9 @@ class Game {
         return false
     }
     
-    func isValidExc(newWord: LSSString, onWord currentWord: LSSString) -> Bool {
+    func isValidExc(newWord: NSString, onWord currentWord: NSString) -> Bool {
         // If the new word and the current word do not have equal lengths...
-        if newWord.length() != currentWord.length() {
+        if newWord.length != currentWord.length {
             // Cannot be valid swap
             return false
         }
@@ -159,10 +165,10 @@ class Game {
         var indexOfSwappedChar = -1;
         // Cycles through the indexes of the new word
         // (Both words have the same length, so it doesn't actually matter which one we cycle through)
-        for var i = 0; i < newWord.length(); i++ {
+        for var i = 0; i < newWord.length; i++ {
             // If the character in the new word at the current index is not equal to the
             // character in the current word at the current index...
-            if newWord.charAt(i) != currentWord.charAt(i) {
+            if newWord.characterAtIndex(i) != currentWord.characterAtIndex(i) {
                 // Set the variable to the index
                 indexOfSwappedChar = i;
                 // Stop the search
@@ -178,9 +184,9 @@ class Game {
         return false
     }
     
-    func restOfWordIsSame(newWord: LSSString, to currentWord: LSSString, fromIndex index: Int, withOffset offset: Int) -> Bool {
-        for var i = index + 1; i < newWord.length(); i++ {
-            if(newWord.charAt(i) != currentWord.charAt(i - offset)) {
+    func restOfWordIsSame(newWord: NSString, to currentWord: NSString, fromIndex index: Int, withOffset offset: Int) -> Bool {
+        for var i = index + 1; i < newWord.length; i++ {
+            if(newWord.characterAtIndex(i) != currentWord.characterAtIndex(i - offset)) {
                 return false
             }
         }
