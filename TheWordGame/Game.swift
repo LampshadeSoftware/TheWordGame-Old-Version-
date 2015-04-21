@@ -80,7 +80,7 @@ class Game {
         
         var indexOfNewChar = -1
         for var i=0; i < currentWord.length; i++ {
-            if newWord.characterAtIndex(i) != newWord.characterAtIndex(i) {
+            if newWord.characterAtIndex(i) != currentWord.characterAtIndex(i) {
                 indexOfNewChar = i;
                 break;
             }
@@ -94,7 +94,8 @@ class Game {
             
             let s:unichar = ("s" as NSString).characterAtIndex(0)
             let e:unichar = ("e" as NSString).characterAtIndex(0)
-            let d:unichar = ("e" as NSString).characterAtIndex(0)
+            let d:unichar = ("d" as NSString).characterAtIndex(0)
+            
             // If the added character is an 's'...
             if newWord.characterAtIndex(indexOfNewChar) == s {
                 logMessage = "Cannot simply add 's'"
@@ -109,7 +110,7 @@ class Game {
         }
         
         // If the rest of the word is the same after the added letter...
-        if restOfWordIsSame(newWord, to: currentWord, fromIndex: indexOfNewChar, withOffset: 1) {
+        if restOfWordIsSame(newWord, to: currentWord, fromIndex: indexOfNewChar+1, withOffset: 1) {
             println("\(newWord) is a valid add on \(currentWord)")
             return true
         }
@@ -147,7 +148,7 @@ class Game {
         }
         
         // If the rest of the word is the same after the deleted character...
-        if restOfWordIsSame(newWord, to: currentWord, fromIndex: indexOfDeletedChar-1, withOffset: -1) {
+        if restOfWordIsSame(newWord, to: currentWord, fromIndex: indexOfDeletedChar, withOffset: -1) {
             return true
         }
 
@@ -177,7 +178,7 @@ class Game {
         }
         
         // If the index variable was changed, and the rest of the word is the same after the swapped character...
-        if indexOfSwappedChar != -1 && restOfWordIsSame(newWord, to: currentWord, fromIndex: indexOfSwappedChar, withOffset: 0) {
+        if indexOfSwappedChar != -1 && restOfWordIsSame(newWord, to: currentWord, fromIndex: indexOfSwappedChar+1, withOffset: 0) {
             return true
         }
         
@@ -185,7 +186,7 @@ class Game {
     }
     
     func restOfWordIsSame(newWord: NSString, to currentWord: NSString, fromIndex index: Int, withOffset offset: Int) -> Bool {
-        for var i = index + 1; i < newWord.length; i++ {
+        for var i = index; i < newWord.length; i++ {
             if(newWord.characterAtIndex(i) != currentWord.characterAtIndex(i - offset)) {
                 return false
             }
