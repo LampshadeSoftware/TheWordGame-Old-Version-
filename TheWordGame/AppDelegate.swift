@@ -8,7 +8,7 @@
 
 import UIKit
 
-var finalDictionary:Dictionary!
+var englishDictionary:Dictionary!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pageControl.currentPageIndicatorTintColor = UIColor.lightGrayColor()
         pageControl.backgroundColor = UIColor.whiteColor()
         
-        finalDictionary = Dictionary()
+        englishDictionary = Dictionary()
         
         println("TWG: initialized")
         return true

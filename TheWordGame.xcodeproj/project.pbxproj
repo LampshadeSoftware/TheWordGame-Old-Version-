@@ -20,8 +20,8 @@
 		BAF13B881AD98FC3007EEB0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF13B811AD98FC2007EEB0D /* ViewController.swift */; };
 		CC03E99A1ADB3AF100C0F7ED /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03E9991ADB3AF100C0F7ED /* Dictionary.swift */; };
 		CC03E99C1ADDFC4100C0F7ED /* LSSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03E99B1ADDFC4100C0F7ED /* LSSString.swift */; };
+		CC83B1AD1AE6A8B9007164DE /* Dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC83B1AC1AE6A8B9007164DE /* Dictionary.txt */; };
 		CCC4F5721ADB30AE0094BA72 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC4F5711ADB30AE0094BA72 /* Game.swift */; };
-		CCF1FA9F1AE1616B0086206D /* Dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = CCF1FA9E1AE1616B0086206D /* Dictionary.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +39,8 @@
 		BAF13B811AD98FC2007EEB0D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC03E9991ADB3AF100C0F7ED /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		CC03E99B1ADDFC4100C0F7ED /* LSSString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSSString.swift; sourceTree = "<group>"; };
+		CC83B1AC1AE6A8B9007164DE /* Dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dictionary.txt; sourceTree = "<group>"; };
 		CCC4F5711ADB30AE0094BA72 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		CCF1FA9E1AE1616B0086206D /* Dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dictionary.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 		187E00D61ADB248000D673C4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CCF1FA9E1AE1616B0086206D /* Dictionary.txt */,
+				CC83B1AC1AE6A8B9007164DE /* Dictionary.txt */,
 				CCC4F5711ADB30AE0094BA72 /* Game.swift */,
 				CC03E9991ADB3AF100C0F7ED /* Dictionary.swift */,
 				CC03E99B1ADDFC4100C0F7ED /* LSSString.swift */,
@@ -176,7 +176,7 @@
 				BAF13B831AD98FC2007EEB0D /* LaunchScreen.xib in Resources */,
 				BAF13B841AD98FC3007EEB0D /* Main.storyboard in Resources */,
 				BAF13B861AD98FC3007EEB0D /* Images.xcassets in Resources */,
-				CCF1FA9F1AE1616B0086206D /* Dictionary.txt in Resources */,
+				CC83B1AD1AE6A8B9007164DE /* Dictionary.txt in Resources */,
 				BAF13B871AD98FC3007EEB0D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

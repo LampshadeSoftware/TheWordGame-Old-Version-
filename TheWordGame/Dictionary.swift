@@ -13,20 +13,24 @@ class Dictionary {
     let dictionary: Array<String>!
     
     init() {
-        let path: String = "~/Dictionary.txt".stringByExpandingTildeInPath
+        let bundle = NSBundle.mainBundle()
+        let path = bundle.pathForResource("Dictionary", ofType: "txt")
+        
         // Define the contents of Dictionary.txt as a single string
-        // let entireDictionary: String = String(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil)!
+        let entireDictionary = String(contentsOfFile: path!, encoding:NSUTF8StringEncoding, error:nil)
         
-        let str = "one two three four"
-        let arr = str.componentsSeparatedByString(" ")
-        
-        println(arr)
+        dictionary = entireDictionary?.componentsSeparatedByString("\n")
         
         println("Dictionary initialized")
 
     }
     
-    class func isEnglishWord() -> Bool {
-        return true;
+    func hasWord(newWord: String) -> Bool {
+        for word in dictionary {
+            if word == newWord {
+                return true
+            }
+        }
+        return false
     }
 }

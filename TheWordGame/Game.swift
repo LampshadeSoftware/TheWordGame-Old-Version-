@@ -54,7 +54,7 @@ class Game {
         }
         // If the new word is a valid addition, subtraction, or swap on the current word...
         if isValidAdd(newWord, onWord: currentWord) || isValidSub(newWord, onWord: currentWord) || isValidExc(newWord, onWord: currentWord) {
-            if Dictionary.isEnglishWord() {
+            if englishDictionary.hasWord(newWord) {
                 var lastWord = usedWords[usedWords.count - 2]
                 if isValidAdd(newWord, onWord: lastWord) || isValidSub(newWord, onWord: lastWord) || isValidExc(newWord, onWord: lastWord) {
                     logMessage = "Double play!"
