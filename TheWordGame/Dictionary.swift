@@ -26,9 +26,17 @@ class Dictionary {
     }
     
     func hasWord(newWord: String) -> Bool {
-        for word in dictionary {
-            if word == newWord {
+        var lo = 0, hi = dictionary.count
+        while lo <= hi {
+            var mid = lo + (hi-lo)/2
+            if dictionary[mid] == newWord {
                 return true
+            }
+            else if dictionary[mid] < newWord {
+                lo = mid+1
+            }
+            else  {
+                hi = mid-1
             }
         }
         return false
